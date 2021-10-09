@@ -1,7 +1,7 @@
 # BetterCatsBot
 
 ## Description
-Bot is built on asynchronous library aiogram and deployed on heroku
+BetterCatsBot is the telegram bot (@BetterCatsBot), that is built on asynchronous library Aiogram and deployed on Heroku
 
 Webhook is used
 
