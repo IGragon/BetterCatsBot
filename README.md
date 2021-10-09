@@ -1,17 +1,23 @@
 # BetterCatsBot
 
-## Описание
-Бот построен на асинхронной библиотеке aiogram и задеплоен на heroku
-Используется webhook
+## Description
+Bot is built on asynchronous library aiogram and deployed on heroku
 
-## Функции бота
-/start - выводит приветствие
+Webhook is used
 
-/cat - переходит в режим обработки изображений
+## Bot commands
+/start - greets user
 
-/help - выходит из любого режима и отправляет список команд с описанием
+/cat - transition to image processing mode
 
-## Обработка изображений
-Изображения улучшаются SRRes-Net обученой на датасете с кошками 150 эпох
+/help - exits any mode and shows the list of commands
 
-Из-за ограничения heroku на 500 Мб памяти изображения более 200px в любой размерности будут ужиматься до 200px в этой размерности.
+## Image processing
+Images are refined by SRRes-Net, that was trained on a dataset with cats for 1000 epochs.
+
+Due to Heroku's restriction on 500 Mb of memory, input images larger than 200px in any dimension will be compressed to 200px in that dimension.
+
+## Examples
+There are examples of upscaling 128px images to 512px
+
+
