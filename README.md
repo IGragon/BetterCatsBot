@@ -5,6 +5,8 @@ BetterCatsBot is the telegram bot (@BetterCatsBot), that is built on asynchronou
 
 Webhook is used
 
+Some training info can be found in this .ipynb notebook https://colab.research.google.com/drive/1jrAvjN7hLNRRmqXT0vvswbFGq5putyKt?usp=sharing
+
 ## Bot commands
 /start - greets user
 
@@ -13,7 +15,9 @@ Webhook is used
 /help - exits any mode and shows the list of commands
 
 ## Image processing
-Images are refined by SRRes-Net, that was trained on a dataset with cats for 1000 epochs.
+Images are refined by SRGAN, that was trained on a dataset with cats for 1000 epochs.
+
+SRGAN is initialized with SRRes-Net-MSE weights, that was pretrained for 100 epochs on the same dataset.
 
 Due to Heroku's restriction on 500 Mb of memory, input images larger than 200px in any dimension will be compressed to 200px in that dimension.
 
